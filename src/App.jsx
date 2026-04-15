@@ -1,11 +1,8 @@
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-
+import Header from "./Header.jsx"
+import Footer from "./Footer.jsx"
 
 function App() {
-
-
-	const now = new Date();
+	const now = new Date()
 
 	return (
 		<div>
@@ -15,11 +12,9 @@ function App() {
 
 			<p>Today is {now.getFullYear()}</p>
 
-			<Footer greeting="Hello there"/>
-			
+			<Footer greeting="Hello there" />
 		</div>
 	)
 }
-
 
 export default App
