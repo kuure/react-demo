@@ -4,12 +4,19 @@ import Footer from './Footer.jsx'
 
 function App() {
 
+
+	const now = new Date();
+
 	return (
 		<div>
-			<Header />
-			<h1>Hi There</h1>
-			<main>This is the main part of the page.</main>
-			<Footer />
+			<Header>
+				<p>This should be in the header?</p>
+			</Header>
+
+			<p>Today is {now.getFullYear()}</p>
+
+			<Footer greeting="Hello there"/>
+			
 		</div>
 	)
 }

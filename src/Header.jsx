@@ -1,9 +1,14 @@
 import styles from './Header.module.css';
 
-function Header() {
+
+
+function Header({children}) {
+
+
 	return (
 		<header>
-			<h1 className={styles.headline}>Header Component</h1>
+			<h1 className={styles.headline}>Boo</h1>
+			{children}
 		</header>
 	)
 }
