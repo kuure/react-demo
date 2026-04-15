@@ -1,4 +1,4 @@
-# Simple React / Vite / GitHub Demo
+# Simple Node.js / React / Vite / GitHub Pages Demo
 
 
 This is a simple web application that uses:
@@ -6,6 +6,7 @@ This is a simple web application that uses:
 - [Node.js](https://nodejs.org/en): "Run JavaScript Everywhere"
 - [React](https://react.dev/): "The library for web and native user interfaces" 
 - [Vite](https://vite.dev/): "The Build Tool for the Web"
+- [GitHub Pages](https://docs.github.com/en/pages): "GitHub Pages turns any GitHub repository into a live website"
 
 Node.js on its own is "just" a JavaScript interpreter. But node also
 includes the [Node Package Manager](https://docs.npmjs.com/) (npm) allows
@@ -24,6 +25,55 @@ application; it can create new versions of applications based on any
 number of libraries using JavaScript or TypeScript, integrate CSS, running
 development environments, and "transpiling" TypeScript and JSX into "real"
 HTML, JavaScript and CSS.
+
+GitHub Pages can be configured to automatically deploy this web site every
+time you `push` a commit to a particular branch, with all sorts of levels
+of complexity.
+
+
+
+
+
+## Folder Structure
+
+React is an "unopinionated" framework, meaning it does not care where you
+put your files and folders as long as it knows where to find them.
+
+Vite, however, establishes a folder structure and sets up all the
+necessary files for you. It has its own configuration file,
+`vite.config.js`, which has been modified slightly in this application to
+work with the GitHub Pages system.
+
+The folder contents look like this:
+
+```
+.gitignore
+index.html
+package.json
+public/
+src/
+README.md
+vite.config.js
+```
+
+
+
+`.gitignore` tells git to _not_ track a number of system and development
+files and folders
+
+`index.html` is the entry point for the app
+
+`package.json` is the file that sets the app configuration, handles
+running the development and deployment processes, and tells NPM what
+software is needed to run this app
+
+`public/` is where images, favicons, or other publicly readable files
+should go.
+
+`src/` is where the application's actual source code is stored
+
+`vite.config.js` as mentioned before
+
 
 
 
