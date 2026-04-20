@@ -1,3 +1,20 @@
-.headline {
-  color: pink;
+/* 
+
+the app build process gives this a unique class 
+name and scopes it to only apply to modules that 
+import input
+
+*/
+.headLine {
+	background-color: pink;
+	padding: 1rem;
+
+	h1 {
+		color: navy;
+	}
+
+	p {
+		color: darkgreen;
+	}
+
 }
